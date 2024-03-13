@@ -30,7 +30,8 @@
 }
 
 .page-one__logo {
-    margin-top: 30vh;
+    margin-top: 33vh;
+    height: 42px;
     display: flex;
     justify-self: center;
     grid-column: span 12;
@@ -52,6 +53,7 @@
     border-radius: 18px;
     padding: 22px 16px;
     outline: none;
+    background-color: #070a12;
     color: #fff;
 }
 
