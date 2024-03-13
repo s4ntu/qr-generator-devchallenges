@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <main class="main-pages">
+        <section class="page-one" id="page-one">
+            <img class="page-one__logo" src="assets/logo-qr-generator.svg" alt="QR Code Generator Logo">
+            <div class="page-one__input-container">
+                <input class="page-one__input" type="text" placeholder="Enter a URL" id="urlInput">
+                <button class="page-one__button" onclick="generateQRCode()">QR code</button>
+        </div>
+        </section>
+        <section class="page-two  hidden" id="page-two">
+            <img src="assets/logo-qr-generator.svg" class="logo" alt="">
+            <div class="page-two__qrcode-container">
+                <div id="qrcode" class="page-two__qrcode"></div>
+            </div>
+            <div class="page-two__buttons-container">
+                <button class="page-two__button" onclick="download()">Download<span class="material-symbols-outlined">
+                    download
+                    </span></button>
+                <button class="page-two__button" onclick="share()">Share<span class="material-symbols-outlined">
+                    share
+                    </span></button>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
